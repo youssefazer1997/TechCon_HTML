@@ -26,9 +26,27 @@
       </nav>
     </header>
     <main>
-      <form>
+      <p>
+        Email:
+        <a href="mailto:contact@techcon2024.com">contact@techcon2024.com</a>
+      </p>
+      <p>
+        <a href="https://twitter.com/techcon" target="_blank">Twitter</a> |
+        <a href="https://facebook.com/techcon" target="_blank">Facebook</a> |
+        <a href="https://instagram.com/techcon" target="_blank">Instagram</a>
+      </p>
+      <h2>Venue Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450974!2d144.95373531531696!3d-37.81627917975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1fbb1a7%3A0x5045675218ce7e33!2zVGVjaENvbiBWZW51ZQ!5e0!3m2!1sen!2sus!4v1617123600000!5m2!1sen!2sus"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+
+      <!-- Contact Us Form -->
+      <h2>Contact Us Form</h2>
+      <form class="contact-form">
         <div>
-          <label for="name">Full Name:</label>
+          <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
         </div>
         <div>
@@ -36,24 +54,11 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
         <div>
-          <label for="confirm-password">Confirm Password:</label>
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-            required
-          />
-        </div>
-        <div>
-          <input type="checkbox" id="terms" name="terms" required />
-          <label for="terms">I agree to the terms and conditions</label>
-        </div>
-        <div>
-          <button type="submit">Register Now</button>
+          <button type="submit">Send Message</button>
         </div>
       </form>
     </main>
